@@ -12,4 +12,22 @@
     #page2:target { 
         display: block;
     }
-</style>
+ #page3 { 
+        display: none;
+    }
+    #page3:target { 
+        display: block;
+    }
+#page4 { 
+        display: none;
+    }
+    #page4:target { 
+        display: block;
+    }
+   #page5 { 
+        display: none;
+    }
+    #page5:target { 
+        display: block;
+    }
+
