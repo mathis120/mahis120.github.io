@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon site fait en NSI</title>
     <style>
-       
+        /* Style général */
         body {
             padding: 0;
             margin: 0;
@@ -14,7 +14,7 @@
             text-align: center;
         }
 
-     
+        /* Style du menu */
         header {
             background-color: #ffffff;
             padding: 15px;
@@ -28,7 +28,6 @@
             gap: 20px;
         }
 
-        
         header a {
             text-decoration: none;
             color: #333;
@@ -41,45 +40,48 @@
             color: #ff8800;
         }
 
-        
+        /* Espacement pour ne pas cacher le contenu sous le menu */
         main {
             margin-top: 80px;
             padding: 20px;
         }
 
-        
-        section {
-            padding: 50px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Style des iframes (pages) */
+        iframe {
+            display: none; /* Masquer toutes les pages */
+            width: 80%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        /* Afficher uniquement l'iframe ciblé */
+        iframe:target {
+            display: block;
         }
     </style>
 </head>
 <body>
 
 <header>
-    
-     <a href="#page1">Page 1</a>
-     <a href="#page2">Page 2</a>
-     <a href="#page3">Page 3</a>
-     <a href="#page4">Page 4</a>
-     <a href="#page5">Page 5</a>
-    
+    <a href="#page1">Page 1</a>
+    <a href="#page2">Page 2</a>
+    <a href="#page3">Page 3</a>
+    <a href="#page4">Page 4</a>
+    <a href="#page5">Page 5</a>
 </header>
+
 <main>
     <h1>Bienvenue sur mon site de NSI</h1>
     <p>Ceci est un site de démonstration pour la NSI.</p>
 </main>
 
-<iframe id="page1" src="page1.html" ></iframe>
-<iframe id="page2" src="page2.html" ></iframe>
-<iframe id="page3" src="page3.html" ></iframe>
-<iframe id="page4" src="page4.html" ></iframe>
-<iframe id="page5" src="page5.html" ></iframe>
+<!-- Pages affichées dans des iframes -->
+<iframe id="page1" src="page1.html"></iframe>
+<iframe id="page2" src="page2.html"></iframe>
+<iframe id="page3" src="page3.html"></iframe>
+<iframe id="page4" src="page4.html"></iframe>
+<iframe id="page5" src="page5.html"></iframe>
 
-
-   
 </body>
 </html>
