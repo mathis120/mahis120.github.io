@@ -4,7 +4,8 @@
         display: none;
     }
     #page1:target { 
-        display: block;
+        display: block
+        width: 100%;
     }
     #page2 { 
         display: none;
