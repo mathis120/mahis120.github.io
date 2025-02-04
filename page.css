@@ -12,13 +12,13 @@
     #page2:target { 
         display: block;
     }
- #page3 { 
+    #page3 { 
         display: none;
     }
     #page3:target { 
         display: block;
     }
-#page4 { 
+    #page4 { 
         display: none;
     }
     #page4:target { 
@@ -30,7 +30,7 @@
     #page5:target { 
         display: block;
     }
-iframe {
+    iframe {
     width: 100%;
 }
 </style>
