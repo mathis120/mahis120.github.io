@@ -30,4 +30,7 @@
     #page5:target { 
         display: block;
     }
+iframe {
+    width: 100%;
+}
 </style>
